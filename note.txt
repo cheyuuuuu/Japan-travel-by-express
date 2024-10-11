@@ -1,0 +1,7 @@
+在express自動生成的專案中設定路由步驟
+
+1.先建立好目標 如about.html等
+2.在routes資料夾下面新增路由的js檔案 並注意目標位置要../public 用res.sendFile來送出一個html檔案
+3.到app.js檔案中尋找路由相關的code
+4.app.js 新增middleware //app.use(express.static(path.join(__dirname, 'public')));
+5.var定義好再app.use路由
