@@ -20,6 +20,7 @@ body{
         left: 0;
     }
     header{
+        box-shadow: 10px 10px 10px rgba(211,211,211); //水平 垂直 模糊
         background-color: white;
         display: flex;
         flex-wrap: wrap;
@@ -40,6 +41,7 @@ body{
         }
         nav {
             flex:5 1 500px;
+            
             //border: 2px solid orange;
             ul{
                 display: flex;
@@ -151,6 +153,37 @@ body{
                 height: 40vh;
             }
         }
+        section.foodintros{
+            
+            display: flex;
+            flex-wrap: wrap; //空間不足的時候換行
+            justify-content: center; //置中
+            img{
+                width: 500px; // 固定寬度，例如 200px
+                height: 500px; // 固定高度，例如 200px
+                object-fit: cover; // 確保圖片不會變形，會裁剪來適應容器
+                border-radius: 50%; // 圓形圖片
+                transition: all 0.1s ease-in;
+                padding: 0.3rem;
+                margin: 10px; // 添加一些間距
+                cursor: pointer;
+                &:hover {
+                    border: 3px solid $themeColor;
+                }
+            }
+            p{
+                    text-align: center;
+                    font-size: 2rem;
+            }
+                
+            
+            }
+        }
+        section.button {
+            text-align: center;
+            font-size: 50rem;
+
+        }
     }
     footer{
         display: flex;
@@ -178,7 +211,7 @@ body{
             }
         }
     }
-}
+    
 
 @media screen and (max-width:700px){
     body{
