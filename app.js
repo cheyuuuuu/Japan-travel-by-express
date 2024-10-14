@@ -4,9 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config();
+
 var indexRouter = require('./routes/index'); //在這裡新增路由定義
 var usersRouter = require('./routes/users');
 var foodRouter = require('./routes/food');
+var aihelpRouter = require('./routes/aihelp');
 
 var app = express();
 
@@ -20,9 +23,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); //middleware
 
+
 app.use('/', indexRouter);//在這裡使用路由
 app.use('/users', usersRouter);
 app.use('/food', foodRouter);
+app.use('/aihelp', aihelpRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

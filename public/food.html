@@ -6,13 +6,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./stylesheets/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+  <link rel="icon" href="./icons/passport.ico">
   <title>美食介紹</title>
 </head>
 <body>
   <header>
     <section class="Logo">
-        <img src="./images/網站Logo.svg" alt="日本旅遊網logo">
+        <img src="./icons/flight.png" alt="日本旅遊網logo">
         <h1>日本旅遊推薦</h1>
     </section>
     <nav>
@@ -26,34 +26,50 @@
   </header>
   <main>
     <section class="foodintros">
-      <div>
-        <img src="./images/tenpula.jpg" alt="tenpula">
+      <div class="introcontent">
+        <img src="./images/tenpula.jpg" onclick="showIntro('tenpula', this)" alt="tenpula">
         <p>天婦羅</p>
+        <div id="tenpula" class="text" >
+          <h3>從高級日本料理店到家庭料理都有！</h3>
+          <p>先用麵粉、水和雞蛋做好麵衣，然後把魚類或蔬菜等材料沾過麵衣之後再用植物油去炸，這就是所謂的天婦羅。高級的天婦羅專賣店所炸出來的天婦羅都非常香酥鬆脆，而且大部分都只需要沾鹽就可以吃得津津有味。而一般的天婦羅沾的是一種天婦羅專用的醬汁，這種醬汁是用高湯、味醂和醬油去調出來的，味道有點甜，有些人也會在醬汁裡面加些白蘿蔔泥或生薑泥進去沾著天婦羅來吃。很多人也許會把天婦羅跟高級料理店聯想在一起，其實在日本的家庭當中天婦羅也是很平常的一道菜，在一般超級市場的熟食專櫃都可以買得到，所以天婦羅也可以說是一種很平民的食物。</p>
+        </div>
       </div>
-      <div>
-        <img src="./images/soba.jpg" alt="soba">
+      <div class="introcontent">
+        <img src="./images/soba.jpg" onclick="showIntro('soba', this)" alt="soba">
         <p>蕎麥麵</p>
+        <div id="soba" class="text">
+          <h3>冷熱皆宜的蕎麥麵</h3>
+          <p>日本傳統的蕎麥麵主要以蕎麥粉製成，跟壽司和天婦羅一樣都是具有代表性的日本料理。除了熱的湯麵之外也有涼的，一般的蕎麥涼麵是把剛煮好的麵用水沖涼，放到一個竹篩子上面之後再沾著醬汁來吃的MORI（盛）蕎麥麵*，ZARU（竹篩）蕎麥麵較為多見。蕎麥麵已經完全融入了日本人的飲食生活當中，無論是高級的蕎麥麵專門店還是只能站著吃的小店面都有，甚至連加開水進去就可以吃的蕎麥泡麵都可以買得到。
+            <br/>※蕎麥涼麵的日文有兩種，上面有海苔的叫「ざるそば」（Zarusoba），沒有海苔的叫「盛りそば」（Morisoba）。</p>
+        </div>
       </div>
-      <br/>
-      <div>
-        <img src="./images/sukiyaki.jpg" alt="sukiyaki">
+      <div class="introcontent">
+        <img src="./images/sukiyaki.jpg" onclick="showIntro('sukiyaki', this)" alt="sukiyaki">
         <p>壽喜燒</p>
+        <div id="sukiyaki" class="text">
+          <h3>甜甜醬油味的牛肉薄片火鍋</h3>
+          <p>壽喜燒是一種日式火鍋，材料通常有牛肉薄片、長蔥、茼萵、香菇、豆腐、蒟蒻絲等等，調味料用的是醬油、砂糖和味醂，風味較為甘甜。壽喜燒用的牛肉薄片一般來說都比涮涮鍋用的要厚一些。</p>
+        </div>
       </div>
-      <div>
-        <img src="./images/sushi.jpg" alt="sushi">
+      <div class="introcontent">
+        <img src="./images/sushi.jpg" onclick="showIntro('sushi', this)" alt="sushi">
         <p>壽司</p>
+        <div id="sushi" class="text">
+          <h3>從傳統壽司店到迴轉壽司店，連便利商店都有壽司！</h3>
+          <p>到日本來的話誰不想嘗嘗看道道地地的日本壽司呢？日本除了有坐在櫃檯前面讓師傅當場做壽司給你吃的傳統壽司店以外，還有價格公道的迴轉壽司（放了壽司的盤子會在客人眼前的檯子上面繞圈圈）以及專門外帶或外送的平價壽司，種類相當豐富，你可以根據自己的預算來選擇要吃什麼樣的壽司。</p>
+        </div>
       </div>
     </section>
     <section class="button">
       <div class="d-flex justify-content-center">
-        <button type="button" class="btn btn-secondary btn-lg" onclick="">回上一頁</button>
+        <button type="button" class="btn btn-secondary btn-lg" onclick="back()">回上一頁</button>
       </div>
       
     </section>
   </main>
   <footer>
     <section class="logo">
-        <img src="./images/網站Logo.svg" alt="logo"/>
+        <img src="./icons/flight.png" alt="logo"/>
         <h3>日本旅遊推薦</h3>
     </section>
     <section class="links">
@@ -63,6 +79,7 @@
         <a href="#"><img src="./Icons/youtube.svg" alt="youtube"/></a>
     </section>
   </footer>
+  <script src="./javascripts/showintro.js"></script>
 </body>
 
 </html>

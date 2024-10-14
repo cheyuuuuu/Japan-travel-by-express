@@ -9,6 +9,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+body {
+  font-family: "Arial", sans-serif;
+}
 body img.fixed-image {
   min-height: 100vh;
   position: fixed;
@@ -150,6 +153,7 @@ body main section.foodintros img {
   transition: all 0.1s ease-in;
   padding: 0.3rem;
   margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* 添加陰影 */
   cursor: pointer;
 }
 body main section.foodintros img:hover {
@@ -159,9 +163,76 @@ body main section.foodintros p {
   text-align: center;
   font-size: 2rem;
 }
-body section.button {
+body main section.foodintros div.introcontent.None {
+  display: none;
+}
+body main section.foodintros div.introcontent.active {
+  display: block;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main section.foodintros div.introcontent.active img {
+  cursor: default;
+}
+body main section.foodintros div.introcontent div.text.active {
+  display: block;
+}
+body main section.foodintros div.introcontent div.text.active h3 {
+  font-weight: bold;
+  font-size: 5rem;
+}
+body main section.foodintros div.introcontent div.text.active p {
+  text-align: left;
+  text-indent: 2em;
+  font-size: 2rem;
+}
+body main section.foodintros div.introcontent div.text {
+  display: none;
+}
+body main div.titleContainer {
+  margin-left: 28%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+body main div.titleContainer h3.aiTitle {
+  font-size: 3rem;
+  margin: 0;
+}
+body main section.chatBox {
+  position: relative;
+  display: flex;
+  justify-items: center;
+  height: 70vh;
+  width: 50vw;
+  margin-left: 25%;
+  margin-top: 10px;
+  margin-bottom: 5%;
+  padding: 30px;
+  box-shadow: 0 0 10px #000;
+  background-color: #f4f5f7;
+  border-radius: 20px;
+}
+body main section.chatBox div.chatContainer {
+  overflow-y: auto;
+  border: 2px solid red;
+  height: 60vh;
+}
+body main section.chatBox div.inputContainer {
+  position: absolute;
+  left: 10%;
+  bottom: 3%;
+}
+body main section.chatBox div.inputContainer input {
+  width: 35vw;
+}
+body main section.button {
   text-align: center;
   font-size: 50rem;
+  padding: 10px;
+  margin: 10px;
 }
 
 footer {
