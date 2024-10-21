@@ -4,7 +4,7 @@ var path = require('path');
 
 const apiKey = process.env.OPENAI_API_KEY; // 從 .env 讀取 API 密鑰
 
-// 當用戶訪問 /aihelp 時返回 aihelp.html 頁面
+/* GET aihelp page. */
 router.get('/', function(req, res, next) {
   res.sendFile(path.join(__dirname, '../public', 'aihelp.html'));
 });

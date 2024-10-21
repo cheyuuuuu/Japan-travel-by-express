@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我們</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./stylesheets/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="icon" href="./icons/passport.ico">
+</head>
+<body>
+  <header>
+    <section class="Logo">
+        <img src="./icons/flight.png" alt="日本旅遊網logo">
+        <h1>日本旅遊推薦</h1>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="/"><i class="fa-solid fa-plane"></i> 首頁</a></li>
+            <li><a href="/food"><i class="fa-solid fa-utensils"></i> 日本美食介紹</a></li>
+            <li><a href="/aihelp"><i class="fa-solid fa-book"></i> AI協助規劃</a></li>
+            <li><a href="/contact"><i class="fa-solid fa-tty"></i> 聯絡我們</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <form action="/contact/submit" method="post" id="form">
+        <table>
+          <tr>
+            <td>稱呼：</td>
+            <td><input type="text" name="name" id="name" placeholder="輸入你的稱呼"/></td>
+          </tr>
+          <tr>
+            <td>連絡電話：</td>
+            <td><input type="text" name="number" id="number" placeholder="輸入你的電話"/></td>
+          </tr>
+          <tr>
+            <td>內容：</td>
+            <td><input type="text" name="contain" id="contain" placeholder="輸入你的意見"></td>
+          </tr>
+        </table>
+        <button type="button" onclick="submitForm()">送出</button>
+      </form>
+  </section>
+  </main>
+  <footer>
+    <section class="logo">
+        <img src="./icons/flight.png" alt="logo"/>
+        <h3>日本旅遊推薦</h3>
+    </section>
+    <section class="links">
+        <a href="#"><img src="./Icons/facebook.svg" alt="facebook"/></a>
+        <a href="#"><img src="./Icons/instagram.svg" alt="instagram"/></a>
+        <a href="#"><img src="./Icons/x.svg" alt="x"/></a>
+        <a href="#"><img src="./Icons/youtube.svg" alt="youtube"/></a>
+    </section>
+  </footer>
+  <script src="./javascripts/submit.js"></script>
+</body>
+</html>

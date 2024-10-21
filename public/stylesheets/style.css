@@ -216,9 +216,28 @@ body main section.chatBox {
   border-radius: 20px;
 }
 body main section.chatBox div.chatContainer {
-  overflow-y: auto;
-  border: 2px solid red;
+  display: flex;
+  width: 100%;
   height: 60vh;
+}
+body main section.chatBox div.chatContainer div.chatDisplay {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+}
+body main section.chatBox div.chatContainer div.chatDisplay div.chat-message.user-message {
+  text-align: right;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 2px;
+}
+body main section.chatBox div.chatContainer div.chatDisplay div.chat-message.bot-message {
+  border: 2px solid rgba(67, 62, 62, 0.426);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 2px;
 }
 body main section.chatBox div.inputContainer {
   position: absolute;
@@ -227,6 +246,18 @@ body main section.chatBox div.inputContainer {
 }
 body main section.chatBox div.inputContainer input {
   width: 35vw;
+  border-color: #000;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+body main section.chatBox div.inputContainer button {
+  border-radius: 10px;
+  color: #f4f5f7;
+  padding: 2px;
+  background-color: rgb(123, 124, 115);
+}
+body main section.chatBox div.inputContainer button:hover {
+  background-color: rgb(56, 55, 55);
 }
 body main section.button {
   text-align: center;
