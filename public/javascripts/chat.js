@@ -35,7 +35,7 @@ async function sendMessage() {
 }
 
 function appendMessage(message, sender) {
-  const chatDisplay = document.getElementById('chat-display'); // 確保這裡的 ID 與 HTML 一致
+  const chatDisplay = document.getElementById('chat-display'); 
   const messageElement = document.createElement('div');
   messageElement.classList.add('chat-message', sender === 'user' ? 'user-message' : 'bot-message');
   messageElement.textContent = message;

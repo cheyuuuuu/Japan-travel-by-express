@@ -227,6 +227,7 @@ body main section.chatBox div.chatContainer div.chatDisplay {
   overflow-y: auto;
 }
 body main section.chatBox div.chatContainer div.chatDisplay div.chat-message.user-message {
+  display: inline-block;
   text-align: right;
   border: 2px solid black;
   border-radius: 20px;
@@ -264,6 +265,34 @@ body main section.button {
   font-size: 50rem;
   padding: 10px;
   margin: 10px;
+}
+body main section.form {
+  display: flex;
+  height: 80vh;
+}
+body main section.form form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+}
+body main section.form form table tbody tr td {
+  padding: 10px;
+}
+body main section.form form table tbody tr td input {
+  padding: 3px;
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+body main section.form form table tbody tr td textarea#contain {
+  padding: 3px;
+  width: 300px;
+  height: 300px;
+  resize: none;
+  border-radius: 10px;
+  border: 2px solid black;
 }
 
 footer {

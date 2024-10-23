@@ -25,23 +25,29 @@
     </nav>
   </header>
   <main>
-    <section>
+    <section class="form">
       <form action="/contact/submit" method="post" id="form">
         <table>
+          <h3>留下您的資料及意見以便我們聯絡您</h3>
           <tr>
             <td>稱呼：</td>
-            <td><input type="text" name="name" id="name" placeholder="輸入你的稱呼"/></td>
+            <td><input type="text" name="name" id="name" class="input" placeholder="輸入你的稱呼"/></td>
           </tr>
           <tr>
             <td>連絡電話：</td>
-            <td><input type="text" name="number" id="number" placeholder="輸入你的電話"/></td>
+            <td><input type="text" name="number" id="number" class="input" placeholder="輸入你的電話"/></td>
+          </tr>
+          <tr>
+            <td>電子信箱：</td>
+            <td><input type="text" name="name" id="name" class="input" placeholder="輸入你的電子信箱"/></td>
           </tr>
           <tr>
             <td>內容：</td>
-            <td><input type="text" name="contain" id="contain" placeholder="輸入你的意見"></td>
+            <!-- 要用textarea不要用input，不然css會很難調整 -->
+            <td><textarea type="text" name="contain" id="contain" class="input" placeholder=" 輸入你的意見"></textarea></td> 
           </tr>
         </table>
-        <button type="button" onclick="submitForm()">送出</button>
+        <button type="button" class="btn btn-secondary " id="button">送出</button>
       </form>
   </section>
   </main>
