@@ -123,6 +123,31 @@ body main section.empty-container h3 {
   font-size: 2rem;
   color: white;
 }
+body main section.exchangeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgb(211, 211, 211);
+  background-color: white;
+}
+body main section.exchangeInfo div.exchangeInfoTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+}
+body main section.exchangeInfo div.exchangeInfoTitle img {
+  width: 5vw;
+  height: 5vw;
+  padding: 3px;
+}
+body main section.exchangeInfo div.exchangeInfoTitle h3 {
+  font-size: 2.5rem;
+}
+body main section.exchangeInfo div#rateContainer {
+  font-size: 1.5rem;
+}
 body main section.google-map {
   background-color: white;
   padding: 2rem 1rem;
@@ -293,6 +318,18 @@ body main section.form form table tbody tr td textarea#contain {
   resize: none;
   border-radius: 10px;
   border: 2px solid black;
+}
+body main section.secretPage {
+  display: flex;
+  flex-direction: column;
+}
+body main section.secretPage table tbody {
+  display: inline-block;
+  border: 2px solid red;
+}
+body main section.secretPage table tbody tr {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {

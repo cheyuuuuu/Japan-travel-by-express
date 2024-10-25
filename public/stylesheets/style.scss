@@ -137,6 +137,31 @@ body{
                 color: white;
             }
         }
+        section.exchangeInfo{
+            display: flex;
+            flex-direction: column;
+            justify-items:center;
+            text-align: center;
+            box-shadow:10px 10px 10px rgba(211,211,211);
+            background-color: white;
+            div.exchangeInfoTitle{
+                display: flex; // 使用 Flexbox
+                align-items: center; // 垂直置中
+                justify-content: center; // 水平置中
+                margin: 2px;
+                img{
+                    width: 5vw;
+                    height: 5vw;
+                    padding: 3px;
+                }
+                h3{
+                    font-size: 2.5rem;
+                }
+            }
+            div#rateContainer{
+                font-size: 1.5rem;
+            }
+        }
         section.google-map{
             background-color: white;
             padding: 2rem 1rem;
@@ -319,6 +344,21 @@ body{
                     }
                     
                 }   
+            }
+        }
+        section.secretPage{
+            display: flex;
+            flex-direction: column;
+            table{
+                tbody{
+                    display: inline-block;
+                    border: 2px solid red;
+                    tr{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    
+                }
             }
         }
     }

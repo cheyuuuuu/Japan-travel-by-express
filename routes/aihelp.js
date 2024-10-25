@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-var path = require('path');
+const path = require('path');
 
 const apiKey = process.env.OPENAI_API_KEY; // 從 .env 讀取 API 密鑰
 

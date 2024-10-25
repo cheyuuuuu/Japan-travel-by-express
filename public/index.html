@@ -35,7 +35,7 @@
             <h3>遊玩主題</h3>
             <div class="circles">
                 <div class="circle">
-                    <img src="./images/北海道雪景.jpg" alt="北海道雪景"/>
+                    <img id="tunnel"  src="./images/北海道雪景.jpg" alt="北海道雪景"/>
                     <p>北海道雪景 美不勝收</p>
                 </div>
                 <div class="circle">
@@ -54,6 +54,15 @@
         </section>
         <section class="empty-container">
             <h3>今天就開始規劃行程，找到最適合的方案</h3>
+        </section>
+        <section class="exchangeInfo">
+            <div class="exchangeInfoTitle">
+                <img src="./icons/yen.png" alt="yen">
+                <h3>日圓/美金匯率</h3>
+            </div>
+            <div id="rateContainer">
+                <!-- 放入api得到的匯率 -->
+            </div>
         </section>
         <section class="google-map">
             <h3>日本地理位置</h3>
@@ -78,6 +87,8 @@
         </section>
     </footer>
     <script src="./javascripts/changeImg.js"></script>
+    <script src="./javascripts/exchangeInfo.js" ></script>
     <script>changeImg()</script>
+    <script>exchangeInfo()</script>
 </body>
 </html>
